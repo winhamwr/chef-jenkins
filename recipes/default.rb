@@ -99,9 +99,9 @@ when "ubuntu", "debian"
 
     apt_repository "jenkins" do
       uri "http://pkg.jenkins-ci.org/debian"
-      distribution node['lsb']['codename']
-      components ["binary"]
-      key = "http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key"
+      distribution "binary/"
+      components [""]
+      key "http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key"
       action :add
     end
   end
